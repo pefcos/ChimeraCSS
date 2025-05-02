@@ -2,7 +2,8 @@
 @use 'focus' as *;
 
 textarea,
-input {
+input,
+select {
   @extend %focus-base-component;
   font-family: $font-stack;
   color: $Chimera-text;
@@ -17,7 +18,8 @@ input {
 }
 
 textarea:disabled,
-input:disabled{
+input:disabled,
+select:disabled {
   color: $Chimera-text-disabled;
 }
 
